@@ -6,9 +6,8 @@
 [![License](https://img.shields.io/cocoapods/l/MXSegmentedPager.svg?style=flat)](http://cocoadocs.org/docsets/MXSegmentedPager)
 [![Platform](https://img.shields.io/cocoapods/p/MXSegmentedPager.svg?style=flat)](http://cocoadocs.org/docsets/MXSegmentedPager)
 [![Dependency Status](https://www.versioneye.com/objective-c/mxsegmentedpager/1.0/badge.svg)](https://www.versioneye.com/objective-c/mxsegmentedpager)
-
-Dmxs test
->
+# Get
+GetFileNumb(@"F:\Allen\Sun\Com");
 ``` C#
         private int GetFileNumb(string path)
         {
@@ -16,7 +15,7 @@ Dmxs test
             try
             {
                 string[] directories = new string[0];
-                directories = Directory.GetDirectories(@"F:\Allen\Sun\Com");
+                directories = Directory.GetDirectories(path);
                 foreach (string str2 in directories)
                 {
                     Numb += (new DirectoryInfo(str2)).GetFiles().Length;
@@ -29,4 +28,3 @@ Dmxs test
             return Numb;
         }
 ```
->
