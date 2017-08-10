@@ -8,3 +8,23 @@
 [![Dependency Status](https://www.versioneye.com/objective-c/mxsegmentedpager/1.0/badge.svg)](https://www.versioneye.com/objective-c/mxsegmentedpager)
 
 Dmxs test
+``` C#
+        private int GetFileNumb(string path)
+        {
+            int Numb = 0;
+            try
+            {
+                string[] directories = new string[0];
+                directories = Directory.GetDirectories(@"F:\Allen\Sun\Com");
+                foreach (string str2 in directories)
+                {
+                    Numb += (new DirectoryInfo(str2)).GetFiles().Length;
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message + " " + path);
+            }
+            return Numb;
+        }
+```
