@@ -7,24 +7,39 @@
 [![Platform](https://img.shields.io/cocoapods/p/MXSegmentedPager.svg?style=flat)](http://cocoadocs.org/docsets/MXSegmentedPager)
 [![Dependency Status](https://www.versioneye.com/objective-c/mxsegmentedpager/1.0/badge.svg)](https://www.versioneye.com/objective-c/mxsegmentedpager)
 # Get
-GetFileNumb(@"F:\Allen\Sun\Com");
+**文件相关**
+- **获取文件夹文件数量** ：
+>GetFileNumb(@"F:\Allen\Sun\Com");
 ``` C#
-        private int GetFileNumb(string path)
+private int GetFileNumb(string path)
+{
+    int Numb = 0;
+    try
+    {
+        string[] directories = new string[0];
+        directories = Directory.GetDirectories(path);
+        foreach (string str2 in directories)
         {
-            int Numb = 0;
-            try
-            {
-                string[] directories = new string[0];
-                directories = Directory.GetDirectories(path);
-                foreach (string str2 in directories)
-                {
-                    Numb += (new DirectoryInfo(str2)).GetFiles().Length;
-                }
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show(exception.Message + " " + path);
-            }
-            return Numb;
+            Numb += (new DirectoryInfo(str2)).GetFiles().Length;
         }
+    }
+    catch (Exception exception)
+    {
+        MessageBox.Show(exception.Message + " " + path);
+    }
+    return Numb;
+}
 ```
+- **根据域名或者计算机名获取IP**
+``` C#
+Dns.GetHostEntry("SUN").AddressList[0].ToString();
+Dns.GetHostEntry("lisun.win").AddressList[0].ToString();
+Dns.Resolve("SUN").AddressList[0].ToString();
+Dns.Resolve("lisun.win").AddressList[0].ToString();
+```
+- **关键路径**
+``` C#
+//C:\Users\Administrator\AppData\Roaming
+System.Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+```
+
