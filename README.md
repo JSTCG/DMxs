@@ -1,7 +1,5 @@
 # Dmxs
 
-<embed src="//music.163.com/style/swf/widget.swf?sid=31245034&type=2&auto=1&width=320&height=66" width="340" height="86"  allowNetworking="all"></embed>
-
 [![CI Status](http://img.shields.io/travis/maxep/MXSegmentedPager.svg?style=flat)](https://travis-ci.org/maxep/MXSegmentedPager)
 [![Version](https://img.shields.io/cocoapods/v/MXSegmentedPager.svg?style=flat)](http://cocoadocs.org/docsets/MXSegmentedPager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
