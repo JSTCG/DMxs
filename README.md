@@ -1,4 +1,18 @@
 # Dmxs
+#Dmxs
+|Raw       |Rel      |Step |
+|:-------- |--------:|:--: |
+|Sun.Dmxs  |Start    |  0  |
+|Version   |VersionFile  |  1  |
+|7z.dll    |7z    |  2  |
+|Config.7z |Documents|  3  |
+|Dmxs.7z   |Program  |  4  |
+|Compressor|Config   |  5  |
+|Compressor|Dmxs     |  6  |
+|NetToken  |Net      |  7  |
+
+
+
 
 [![CI Status](http://img.shields.io/travis/maxep/MXSegmentedPager.svg?style=flat)](https://travis-ci.org/maxep/MXSegmentedPager)
 [![Version](https://img.shields.io/cocoapods/v/MXSegmentedPager.svg?style=flat)](http://cocoadocs.org/docsets/MXSegmentedPager)
